@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SmartCart Checkout</title>
+    <link rel="stylesheet" href="css/checkout.css">
+</head>
+
+<body>
+
+<div class="checkout-container">
+
+    <h1>Checkout</h1>
+
+    <form>
+
+        <input type="text"
+               placeholder="Full Name"
+               required>
+
+        <input type="text"
+               placeholder="Phone Number"
+               required>
+
+        <textarea
+        placeholder="Delivery Address"
+        required></textarea>
+
+        <h3>Select Payment Method</h3>
+
+        <div class="payment-options">
+
+            <label>
+                <input type="radio"
+                       name="payment">
+                UPI
+            </label>
+
+            <label>
+                <input type="radio"
+                       name="payment">
+                Credit Card
+            </label>
+
+            <label>
+                <input type="radio"
+                       name="payment">
+                Debit Card
+            </label>
+
+            <label>
+                <input type="radio"
+                       name="payment">
+                Cash On Delivery
+            </label>
+
+        </div>
+
+        <div id="checkout-total"
+             class="checkout-total">
+            Order Total : ₹0
+        </div>
+
+        <button type="button"
+                onclick="placeOrder()">
+            Place Order
+        </button>
+
+    </form>
+
+</div>
+
+<script src="js/checkout.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SmartCart Login</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+     <div class="left-panel">
+
+    <h1>🛒 SmartCart</h1>
+
+    <p class="tagline">
+Shop Smarter. Live Better.
+</p>
+
+    <img src="images/shopping.png"
+         alt="Shopping"
+         class="shopping-image">
+
+</div>
+
+<div class="right-panel">
+
+   <div class="login-box">
+
+    <h2>USER LOGIN</h2>
+
+    <input type="text" placeholder="Username">
+
+    <input type="password" placeholder="Password">
+
+    <a href="#" class="forgot">
+        Forgot your password?
+    </a>
+
+    <button onclick="loginUser()">
+    LOGIN
+</button>
+
+    <a href="register.html" class="create-account">
+        Create Account
+    </a>
+
+</div>
+
+</div>
+
+    </div>
+<script>
+function loginUser()
+{
+    let username =
+    document.querySelectorAll("input")[0].value;
+
+    let password =
+    document.querySelectorAll("input")[1].value;
+
+    if(username === "admin" &&
+       password === "1234")
+    {
+        window.location.href =
+        "home.html";
+    }
+    else
+    {
+        alert(
+        "Use Username: admin Password: 1234"
+        );
+    }
+}
+</script>
+</body>
+</html>

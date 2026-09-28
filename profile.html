@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Profile</title>
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+
+<body>
+
+<div class="profile-container">
+
+    <h1>👤 My Profile</h1>
+
+    <div class="profile-card">
+
+        <label>Full Name</label>
+        <input type="text" id="name"
+        value="Naga Sree">
+
+        <label>Email</label>
+        <input type="email" id="email"
+        value="user@gmail.com">
+
+        <label>Phone Number</label>
+        <input type="text" id="phone"
+        value="9876543210">
+
+        <label>Address</label>
+        <textarea id="address">
+Kakinada, Andhra Pradesh
+        </textarea>
+
+        <button onclick="saveProfile()">
+            Save Changes
+        </button>
+
+    </div>
+
+    <div class="profile-stats">
+
+        <div class="stat-box">
+            <h2>Orders</h2>
+            <p>5</p>
+        </div>
+
+        <div class="stat-box">
+            <h2>Cart Items</h2>
+            <p>3</p>
+        </div>
+
+        <div class="stat-box">
+            <h2>Status</h2>
+            <p>Active</p>
+        </div>
+
+    </div>
+
+    <button class="home-btn"
+    onclick="window.location.href='home.html'">
+        Back To Home
+    </button>
+
+    <button onclick="window.location.href='order_history.html'">
+📦 Order History
+</button>
+
+</div>
+
+<script src="js/profile.js"></script>
+
+</body>
+</html>

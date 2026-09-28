@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SmartCart Register</title>
+    <link rel="stylesheet" href="css/register.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="register-left">
+
+    <h1>🛒 SmartCart</h1>
+
+    <h3>Start Your Shopping Journey</h3>
+
+    <p>
+        Create your account and start shopping
+        from thousands of products.
+    </p>
+
+    <ul class="features">
+    <li>Fast Delivery</li>
+    <li>Secure Payments</li>
+    <li>Easy Returns</li>
+    <li>1000+ Products</li>
+</ul>
+
+    <img src="images/shopping.png"
+         alt="Shopping"
+         class="register-image">
+
+</div>
+
+    <div class="register-right">
+
+        <div class="register-box">
+
+            <h2>CREATE ACCOUNT</h2>
+
+            <input type="text" placeholder="Full Name">
+
+            <input type="email" placeholder="Email">
+
+            <input type="password" placeholder="Password">
+
+            <input type="text" placeholder="Phone Number">
+
+            <textarea placeholder="Address"></textarea>
+
+            <button onclick="registerUser()">
+    REGISTER
+</button>
+
+            <a href="login.html">
+                Already have an account?
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+<button onclick="registerUser()">
+    REGISTER
+</button>
+
+<script>
+function registerUser()
+{
+    alert("Account Created Successfully!");
+    window.location.href="login.html";
+}
+</script>
+</body>
+</html>

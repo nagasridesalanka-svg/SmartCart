@@ -1,0 +1,74 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#faf7ff;
+    font-family:Arial,sans-serif;
+}
+
+.checkout-container{
+    width:700px;
+    margin:50px auto;
+    background:white;
+    padding:40px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.checkout-container h1{
+    text-align:center;
+    color:#5A189A;
+    margin-bottom:30px;
+}
+
+.checkout-container input,
+.checkout-container textarea{
+
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+.checkout-container textarea{
+    height:100px;
+    resize:none;
+}
+
+.payment-options{
+    margin:20px 0;
+}
+
+.payment-options label{
+    display:block;
+    margin-bottom:10px;
+}
+
+.checkout-total{
+    font-size:24px;
+    font-weight:bold;
+    color:#5A189A;
+    margin:25px 0;
+}
+
+.checkout-container button{
+    width:100%;
+    padding:15px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:#7B2CBF;
+
+    color:white;
+
+    font-size:18px;
+
+    cursor:pointer;
+}

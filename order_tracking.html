@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Order Tracking</title>
+    <link rel="stylesheet" href="css/order_tracking.css">
+</head>
+
+<body>
+
+<div class="tracking-container">
+
+    <h1>📦 Order Tracking</h1>
+
+    <div class="tracking-card">
+
+        <h2>Order #1001</h2>
+
+        <p>
+            Current Status :
+            <span id="status">
+                Placed
+            </span>
+        </p>
+
+        <button onclick="cancelOrder()">
+            Cancel Order
+        </button>
+
+    </div>
+
+</div>
+
+<script>
+
+window.onload = function()
+{
+    let status =
+    localStorage.getItem("orderStatus")
+    || "Placed";
+
+    document.getElementById("status")
+    .innerHTML = status;
+}
+
+function cancelOrder()
+{
+    let result =
+    confirm(
+    "Are you sure you want to cancel this order?"
+    );
+
+    if(result)
+    {
+        localStorage.setItem(
+        "orderStatus",
+        "Cancelled"
+        );
+
+        document.getElementById("status")
+        .innerHTML =
+        "Cancelled";
+
+        alert(
+        "Order Cancelled Successfully"
+        );
+    }
+}
+
+</script>
+
+</body>
+</html>

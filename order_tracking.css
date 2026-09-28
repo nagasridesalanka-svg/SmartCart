@@ -1,0 +1,51 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#faf7ff;
+    font-family:Arial,sans-serif;
+}
+
+.tracking-container{
+    width:700px;
+    margin:60px auto;
+}
+
+.tracking-container h1{
+    text-align:center;
+    color:#5A189A;
+    margin-bottom:30px;
+}
+
+.tracking-card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.tracking-card h2{
+    color:#5A189A;
+    margin-bottom:20px;
+}
+
+.tracking-card p{
+    font-size:20px;
+    margin-bottom:20px;
+}
+
+.tracking-card button{
+    background:#dc3545;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:25px;
+    cursor:pointer;
+}
+
+.tracking-card button:hover{
+    background:#b02a37;
+}

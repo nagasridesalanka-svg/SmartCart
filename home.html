@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SmartCart Home</title>
+    <link rel="stylesheet" href="css/home.css">
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+
+<div class="top-bar">
+    <p>🔥 Get 50% Off On Selected Products | Free Delivery Available</p>
+</div>
+
+<!-- NAVBAR -->
+
+<nav class="home-navbar">
+
+    <div class="home-logo">
+        🛒 SmartCart
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="#">Categories</a></li>
+        <li><a href="#">Deals</a></li>
+        <li><a href="#">New Arrivals</a></li>
+        <li><a href="#">Delivery</a></li>
+    </ul>
+
+    <div class="home-search">
+        <input
+<input
+type="text"
+id="searchInput"
+placeholder="Search Products"
+onkeyup="searchProduct()"
+>
+    </div>
+
+    <div class="home-actions">
+
+    <button onclick="window.location.href='profile.html'">
+        👤 Profile
+    </button>
+
+    <button onclick="window.location.href='cart.html'">
+        🛒 Cart
+    </button>
+
+</div>
+
+</nav>
+
+<!-- HERO BANNER -->
+
+<section class="hero-banner">
+
+    <div class="hero-left">
+
+        <h1>Grab Up To 50% Off</h1>
+
+        <h2>On Selected Products</h2>
+
+        <p>
+            Discover Electronics, Fashion, Books and More
+            at amazing prices.
+        </p>
+
+        <button>Shop Now</button>
+
+    </div>
+
+    <div class="hero-right">
+
+        <img src="images/shopping.png" alt="Shopping">
+
+    </div>
+
+</section>
+
+
+
+<!-- FEATURES -->
+
+<section class="features-section">
+
+    <div class="feature-card">🚚 Fast Delivery</div>
+
+    <div class="feature-card">🔒 Secure Payments</div>
+
+    <div class="feature-card">↩ Easy Returns</div>
+
+    <div class="feature-card">🎁 Best Offers</div>
+
+</section>
+
+<!-- PRODUCTS -->
+
+<section class="products-section">
+
+    <h2>Featured Products</h2>
+
+    <div class="product-grid">
+
+        <div class="product-card">
+    <img src="images/laptop.png" alt="">
+    <h3>HP Laptop</h3>
+    <p>₹55000</p>
+
+    <button onclick="addToCart('HP Laptop',55000)">
+        Add to Cart
+    </button>
+</div>
+
+        <div class="product-card">
+    <img src="images/mobile.png" alt="">
+    <h3>Samsung Mobile</h3>
+    <p>₹25000</p>
+
+    <button onclick="addToCart('Samsung Mobile',25000)">
+        Add to Cart
+    </button>
+</div>
+
+        <div class="product-card">
+    <img src="images/book.png" alt="">
+    <h3>DBMS Book</h3>
+    <p>₹799</p>
+
+    <button onclick="addToCart('DBMS Book',799)">
+        Add to Cart
+    </button>
+</div>
+
+       <div class="product-card">
+    <img src="images/bat.png" alt="">
+    <h3>Cricket Bat</h3>
+    <p>₹1299</p>
+
+    <button onclick="addToCart('Cricket Bat',1299)">
+        Add to Cart
+    </button>
+</div>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+    <h3>SmartCart</h3>
+
+    <p>
+        Secure Shopping • Fast Delivery • Best Prices
+    </p>
+
+</footer>
+<script src="js/cart.js"></script>
+<script src="js/search.js"></script>
+</body>
+</html>

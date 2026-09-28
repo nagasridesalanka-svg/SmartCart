@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+
+<body>
+
+<div class="admin-container">
+
+    <h1>🛠 Admin Dashboard</h1>
+
+    <div class="stats">
+
+        <div class="stat-card">
+            <h2>120</h2>
+            <p>Total Users</p>
+        </div>
+
+        <div class="stat-card">
+            <h2>85</h2>
+            <p>Total Products</p>
+        </div>
+
+        <div class="stat-card">
+            <h2>230</h2>
+            <p>Total Orders</p>
+        </div>
+
+    </div>
+
+    <div class="admin-actions">
+
+        <button onclick="showMessage('Add Product')">
+            Add Product
+        </button>
+
+        <button onclick="showMessage('Update Product')">
+            Update Product
+        </button>
+
+        <button onclick="showMessage('Delete Product')">
+            Delete Product
+        </button>
+
+        <button onclick="showMessage('View Orders')">
+            View Orders
+        </button>
+
+        <button onclick="showMessage('View Users')">
+            View Users
+        </button>
+
+    </div>
+
+    <button class="back-btn"
+    onclick="window.location.href='home.html'">
+        Back To Home
+    </button>
+
+</div>
+
+<script src="js/admin.js"></script>
+
+</body>
+</html>
